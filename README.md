@@ -48,36 +48,6 @@ This is a portfolio website for showcasing the personal and professional achieve
 ### Modifying Colors and Styles
 - Edit the `style` section in the `<head>` of the HTML file to change colors, fonts, or layout.
 
-## JavaScript Functionality
-
-### Section Navigation
-The `toggleContent` function is used to navigate between sections:
-```javascript
-function toggleContent(sectionId) {
-    const sections = document.querySelectorAll('.content');
-    sections.forEach(section => {
-        section.style.display = 'none';
-    });
-    document.getElementById(sectionId).style.display = 'block';
-}
-```
-
-### Certificate Modal
-The `showCertificateDetails` function displays the modal popup with certificate details:
-```javascript
-function showCertificateDetails(certName, certImage) {
-    document.getElementById('certificateTitle').innerText = certName;
-    document.getElementById('certificateImage').src = certImage;
-    document.getElementById('certificateModal').style.display = "block";
-}
-```
-
-The modal can be closed by clicking the close button or clicking outside the modal:
-```javascript
-function closeModal() {
-    document.getElementById('certificateModal').style.display = "none";
-}
-```
 
 ## License
 This project is free to use and modify for personal purposes.
